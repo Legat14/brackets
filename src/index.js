@@ -6,7 +6,7 @@ module.exports = function check(str, bracketsConfig) {
     bracketsConfig.forEach((pairOfBrackets) => {
       let pairOfBracketsStr = pairOfBrackets[0] + pairOfBrackets[1];
       let compare = restBrackets;
-      restBrackets = restBrackets.replaceAll(pairOfBracketsStr, '');
+      restBrackets = restBrackets.replace(pairOfBracketsStr, '');
       if (restBrackets !== compare) {
         chenged = true;
       }
